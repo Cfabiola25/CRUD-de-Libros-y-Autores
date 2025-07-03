@@ -15,21 +15,40 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen bg-gray-100">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white dark:bg-gray-800 shadow">
+                <header class="bg-white shadow">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
                 </header>
             @endif
 
+            <!-- Navigation Links -->
+<div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+   @role('usuario')
+    <x-nav-link :href="route('books.index')" :active="request()->routeIs('books.index')">
+        Libros
+    </x-nav-link>
+@endrole
+
+@hasanyrole('admin|superadmin')
+    <x-nav-link :href="route('books.index')" :active="request()->routeIs('books.*')">
+        Libros
+    </x-nav-link>
+
+    <x-nav-link :href="route('authors.index')" :active="request()->routeIs('authors.*')">
+        Autores
+    </x-nav-link>
+@endhasanyrole
+</div>
+
             <!-- Page Content -->
             <main>
-                {{ $slot }}
+               @yield('content')
             </main>
         </div>
     </body>
