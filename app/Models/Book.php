@@ -31,11 +31,7 @@ class Book extends Model implements AuditableContract
      *
      * @var array<string>
      */
-    protected $fillable = [
-        'title',
-        'description',
-        'author_id', // ⚠️ importante para la relación
-    ];
+    protected $fillable = ['title', 'description', 'author_id'];
 
     /**
      * Relación: Un libro pertenece a un autor.
@@ -57,7 +53,7 @@ class Book extends Model implements AuditableContract
     ];
 
     /**
-     * Retorna el ID del usuario autenticado (para Audity).
+     * Devuelve el ID del usuario autenticado para la auditoría.
      */
     public function resolveUserId()
     {

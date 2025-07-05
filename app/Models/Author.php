@@ -31,10 +31,7 @@ class Author extends Model implements AuditableContract
      *
      * @var array<string>
      */
-    protected $fillable = [
-        'name',
-        'bio',
-    ];
+    protected $fillable = ['name', 'bio'];
 
     /**
      * Número de resultados por página en paginación.
@@ -56,8 +53,37 @@ class Author extends Model implements AuditableContract
      *
      * @var array<string>
      */
-    protected $auditInclude = [
-        'name',
-        'bio',
-    ];
+    protected $auditInclude = ['name', 'bio'];
+
+    /**
+     * Devuelve el ID del usuario autenticado para la auditoría.
+     */
+    public function resolveUserId()
+    {
+        return auth()->check() ? auth()->id() : null;
+    }
+
+    /**
+     * Devuelve la IP desde donde se hizo la acción.
+     */
+    public function resolveIpAddress()
+    {
+        return request()->ip();
+    }
+
+    /**
+     * Devuelve el navegador del usuario.
+     */
+    public function resolveUserAgent()
+    {
+        return request()->userAgent();
+    }
+
+    /**
+     * Devuelve la URL desde donde se hizo el cambio.
+     */
+    public function resolveUrl()
+    {
+        return url()->current();
+    }
 }
