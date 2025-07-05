@@ -174,6 +174,7 @@ Desarrollado por **Nelly Fabiola Cano Oviedo**
 📆 Julio 2025
 
 Apoyado por **Jesus Manuel Parada**
+
 👩‍💻 Desarrollador Full-Stack 
 
 💡 Unidad de Desarrollo  
