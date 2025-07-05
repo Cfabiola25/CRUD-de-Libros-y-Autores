@@ -171,6 +171,7 @@ Pruebas clave:
 Desarrollado por **Nelly Fabiola Cano Oviedo**  
 👩‍💻 Estudiante de Ingeniería de Software - FESC  
 💡 Unidad de Desarrollo 
+
 📆 Julio 2025
 
 Apoyado por **Jesus Manuel Parada**
