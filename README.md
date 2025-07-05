@@ -187,4 +187,8 @@ Apoyado por **Jesus Manuel Parada**
 
 ## 📬 Contacto
 
-¿Sugerencias o mejoras? ¡Haz un Pull Request o abre un issue!https://github.com/Cfabiola25/CRUD-de-Libros-y-Autores.gitLinkedIn
+¿Sugerencias o mejoras? ¡Haz un Pull Request o abre un issue!
+
+https://github.com/Cfabiola25/CRUD-de-Libros-y-Autores.git
+
+LinkedIn
