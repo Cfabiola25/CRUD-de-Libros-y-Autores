@@ -112,6 +112,19 @@ Audita los modelos `Author` y `Book`. Las pruebas automatizadas confirman que se
 
 ---
 
+## 🧪 Cómo usar el sistema
+
+Inicia sesión usando cualquiera de los usuarios de prueba.
+
+Si eres admin o superadmin, verás una pantalla de selección para gestionar Libros o Autores.
+
+Si eres usuario, irás directo a la lista de libros en modo solo lectura.
+
+Cada acción de crear, editar o eliminar un autor/libro generará un registro en la tabla audits.
+
+Puedes consultar los registros de auditoría directamente desde base de datos o mediante pruebas automatizadas.
+
+---
 ## 🧪 Pruebas automatizadas
 
 Ubicadas en `tests/Feature/`:
@@ -157,12 +170,14 @@ Pruebas clave:
 
 Desarrollado por **Nelly Fabiola Cano Oviedo**  
 👩‍💻 Estudiante de Ingeniería de Software - FESC  
-💡 Unidad de Desarrollo - Proyecto PROYECTANDO  
+💡 Unidad de Desarrollo 
 📆 Julio 2025
 
 Apoyado por **Jesus Manuel Parada**
 👩‍💻 Desarrollador Full-Stack 
-💡 Unidad de Desarrollo - Proyecto PROYECTANDO  
+
+💡 Unidad de Desarrollo  
+
 📆 Julio 2025
 
 
@@ -170,4 +185,4 @@ Apoyado por **Jesus Manuel Parada**
 
 ## 📬 Contacto
 
-¿Sugerencias o mejoras? ¡Haz un Pull Request o abre un issue!
+¿Sugerencias o mejoras? ¡Haz un Pull Request o abre un issue!https://github.com/Cfabiola25/CRUD-de-Libros-y-Autores.gitLinkedIn
